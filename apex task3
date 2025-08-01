@@ -1,0 +1,11 @@
+USE blog;
+
+-- For page 1 (show 5 posts starting from 0)
+SELECT * FROM posts
+ORDER BY created_at DESC
+LIMIT 5 OFFSET 0;
+
+-- For page 2 (next 5 posts starting from 5)
+SELECT * FROM posts
+ORDER BY created_at DESC
+LIMIT 5 OFFSET 5;
